@@ -1,0 +1,29 @@
+{
+  "name": "extra-project-creativity",
+  "version": "1.0.0",
+  "description": "Extra project to develop creativity",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoMarchini/trybe-extra-project-creativity.git"
+  },
+  "keywords": [
+    "Trybe",
+    "extra",
+    "project",
+    "creativity"
+  ],
+  "author": "Thiago Marchini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagoMarchini/trybe-extra-project-creativity/issues"
+  },
+  "homepage": "https://github.com/ThiagoMarchini/trybe-extra-project-creativity#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "node-fetch": "^2.6.1"
+  }
+}
