@@ -1,0 +1,64 @@
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(193, 250, 108, 0.829);
+}
+
+footer {
+  text-align: center;
+}
+
+#edamam-badge {
+  margin-left: 10%;
+  width: 15%;
+  height: 15%;
+}
+
+.btn {
+  margin-left: 10px;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.recipe-row {
+  padding: 15px;
+  background-color: white;
+  border: 5px solid rgba(0, 128, 0, 0.5);
+  border-radius: 10px;
+}
+
+.col-sm-3 {
+  /* border: 1px solid blue; */
+}
+
+.col-sm-9 {
+  /* border: 1px solid green; */
+}
+
+.input-group {
+  margin: auto;
+}

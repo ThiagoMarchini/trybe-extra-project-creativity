@@ -1,17 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+  <script src="https://developer.edamam.com/attribution/badge.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Recipes Search</title>
 </head>
 <body>
   <main>
-    <h1>Recipes Search</h1>
-    <ul></ul>
+    <header>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col col-sm-3">
+          <img src="images/PinClipart.com_coming-soon-clip-art_908208.png" class="logo" alt="World Cuisine">
+          </div>
+          <div class="col col-sm-9">
+          <h1>Feeling hungry?</h1>
+          <h4>Finding great recipes from all around the world shouldn't be difficult</h4>
+        </div>
+        </div>  
+      </div>
+    </header>
+    <div class ="parameters">
+      <div class="input-group">
+        <form class="container">
+          <div class ="row">
+            <div class="col">
+              <select class="form-select form-select-lg" id="meal-type" aria-label="select type">
+                <option selected value ="">Meal type...</option>
+                <option value="">All</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-select form-select-lg" id="cuisine" aria-label="select cuisine">
+                <option selected value ="">Cuisine...</option>
+                <option value="american">American</option>
+                <option value="asian">Asian</option>
+                <option value="british">British</option>
+                <option value="chinese">Chinese</option>
+                <option value="french">French</option>
+                <option value="indian">Indian</option>
+                <option value="japanese">Japanese</option>
+                <option value="mediterranean">Mediterranean</option>
+                <option value="mexican">Mexican</option>
+                <option value="middle eastern">Middle Eastern</option>
+                <option value="nordic">Nordic</option>
+                <option value="south american">South American</option>
+              </select>
+            </div>
+            <div class="col">
+              <select class="form-select form-select-lg" id="number-of-results" aria-label="select type">
+                <option selected value ="10">Number of results...</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+              </select>
+            </div>
+            <div class="col">
+              <button class="btn btn-outline-secondary btn-lg btn-outline-success" type="button" id="submit">Search</button>
+              <button class="btn btn-outline-secondary btn-lg btn-outline-danger" type="button" id="clear">Clear</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container" id="recipes">
+    </div>
   </main>
+  <footer>
+    <img id="edamam-badge" src="https://developer.edamam.com/images/transparent.png" alt="Powered by Edamam logo">
+    Created by Thiago Marchini @ 2021 using Bootstrap
+  </footer>
   <script src="script.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

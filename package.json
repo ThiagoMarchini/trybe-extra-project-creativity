@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/ThiagoMarchini/trybe-extra-project-creativity#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.0.0-beta3",
     "node-fetch": "^2.6.1"
   }
 }
