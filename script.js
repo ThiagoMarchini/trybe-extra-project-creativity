@@ -30,10 +30,10 @@ function appendRow(image, description) {
   const newRow = document.createElement('div');
   newRow.className = 'row recipe-row';
   const newImageColumn = document.createElement('div');
-  newImageColumn.className = 'col-sm-3';
+  newImageColumn.classList = 'col-12 col-lg-4';
   newImageColumn.innerHTML = `<img src="${image}">`;
   const newDescriptionColumn = document.createElement('div');
-  newDescriptionColumn.className = 'col-sm-9';
+  newDescriptionColumn.classList = 'col-12 col-lg-8';
   newDescriptionColumn.innerHTML = constructInnerHTML(description);
   newRow.appendChild(newImageColumn);
   newRow.appendChild(newDescriptionColumn);
