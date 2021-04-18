@@ -4,6 +4,7 @@ const YOUR_APP_KEY = '879fde4dd5b1a1bb9fa2360ccf776845'
 const fetchRecipesByCuisineOrMeal = async (parameter, numberOfResults) => {
   const response = await fetch(`https://api.edamam.com/search?q=*&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}${parameter}&to=${numberOfResults}`);
   const json = await response.json();
+  console.log(json);
   return json;
 }
 
